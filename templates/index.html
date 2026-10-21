@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supernatural AI Chat</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="chat-container">
+      <header>
+        <h1>Supernatural AI Roleplay Chat</h1>
+        <p>Talk to your favorite character</p>
+
+        <select id="model">
+          <option value="Castiel">Castiel</option>
+          <option value="Sam">Sam Winchester</option>
+          <option value="Dean">Dean Winchester</option>
+        </select>
+      </header>
+
+      <section id="messages" class="messages">
+        <p class="welcome">Choose a character and say hello!</p>
+      </section>
+
+      <form id="chat-form">
+        <input
+          type="text"
+          id="message"
+          placeholder="Type your message..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
