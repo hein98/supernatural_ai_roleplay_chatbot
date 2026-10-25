@@ -35,19 +35,3 @@ Dean = ChatOllama(
     base_url="https://ollama.com",
     client_kwargs={"headers": {"Authorization": f"Bearer {API_KEY}"}},
 )
-
-
-models = {
-    "Castiel": Castiel,
-    "Sam": Sam,
-    "Dean": Dean,
-}
-
-chains = {
-    "Castiel": Castiel_prompt | Castiel,
-    "Sam": Sam_prompt | Sam,
-    "Dean": Dean_prompt | Dean,
-}
-# response = models["Castiel"].invoke("Hello Castiel! Introduce yourself.")
-
-# print(response.content)
